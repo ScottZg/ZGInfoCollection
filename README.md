@@ -100,7 +100,8 @@
 	- (NSInteger)getActiveNuclearCount;
 
 2、ZGStorageInfo   
-/**
+  
+    /**
 	 *  得到当前磁盘总大小
 	 *
 	 *  @param type 大小类型：ZGSizeTypeOrigin是原始大小，没有经过转换，单位为B；ZGSizeTypeNormalized是规格化后的大小
