@@ -235,9 +235,20 @@
 	+ (BOOL)isJailBreak;
 
 
-####更新记录
+7、ZGLocationInfo
 
-暂无
+
+	/**
+	 *  得到设备当前的位置,block回调里面已经包含了CLPlacemark里面包含了你需要的信息，需要自取
+	 *  详细可以参考CLPlacemark类属性
+	 *
+	 *  @return CLLocation
+	 */
+	- (void)getCurrentLocation:(ChangeLocationBlock)block;
+
+####更新记录
+2016年8月19更新    
+添加位置信息定位。详见7
 
 ####附
 有问题请联系：scottzg@126.com
