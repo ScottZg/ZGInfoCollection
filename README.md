@@ -235,7 +235,7 @@
 	+ (BOOL)isJailBreak;
 
 
-7、ZGLocationInfo
+<b>7、ZGLocationInfo</b>
 
 
 	/**
