@@ -21,6 +21,7 @@
 		56EADCE61D65877000251415 /* ZGScreenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCE51D65877000251415 /* ZGScreenInfo.m */; };
 		56EADCE91D65923400251415 /* ZGNetWorkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCE81D65923400251415 /* ZGNetWorkInfo.m */; };
 		56EADCEC1D65A68900251415 /* ZGJailBreak.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCEB1D65A68900251415 /* ZGJailBreak.m */; };
+		56EADCEF1D65C26E00251415 /* ZGLocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCEE1D65C26E00251415 /* ZGLocationInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		56EADCE81D65923400251415 /* ZGNetWorkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGNetWorkInfo.m; sourceTree = "<group>"; };
 		56EADCEA1D65A68900251415 /* ZGJailBreak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGJailBreak.h; sourceTree = "<group>"; };
 		56EADCEB1D65A68900251415 /* ZGJailBreak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGJailBreak.m; sourceTree = "<group>"; };
+		56EADCED1D65C26E00251415 /* ZGLocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLocationInfo.h; sourceTree = "<group>"; };
+		56EADCEE1D65C26E00251415 /* ZGLocationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLocationInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 				56EADCE81D65923400251415 /* ZGNetWorkInfo.m */,
 				56EADCEA1D65A68900251415 /* ZGJailBreak.h */,
 				56EADCEB1D65A68900251415 /* ZGJailBreak.m */,
+				56EADCED1D65C26E00251415 /* ZGLocationInfo.h */,
+				56EADCEE1D65C26E00251415 /* ZGLocationInfo.m */,
 			);
 			path = ZGInfoCollection;
 			sourceTree = "<group>";
@@ -247,7 +252,7 @@
 				TargetAttributes = {
 					56774D2C1D65491D00A48C4F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = XJW8592FVQ;
+						DevelopmentTeam = 64PCQK6645;
 					};
 					56774D451D65491D00A48C4F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -314,6 +319,7 @@
 				56EADCEC1D65A68900251415 /* ZGJailBreak.m in Sources */,
 				56774D381D65491D00A48C4F /* ViewController.m in Sources */,
 				56EADCE91D65923400251415 /* ZGNetWorkInfo.m in Sources */,
+				56EADCEF1D65C26E00251415 /* ZGLocationInfo.m in Sources */,
 				56EADCE61D65877000251415 /* ZGScreenInfo.m in Sources */,
 				56774D351D65491D00A48C4F /* AppDelegate.m in Sources */,
 				56774D691D654AB200A48C4F /* ZGDeviceInfo.m in Sources */,
@@ -467,7 +473,7 @@
 				INFOPLIST_FILE = ZGInfoCollectionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhanggui.ZGInfoCollectionDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuquwangluo.location;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -482,7 +488,7 @@
 				INFOPLIST_FILE = ZGInfoCollectionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhanggui.ZGInfoCollectionDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuquwangluo.location;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

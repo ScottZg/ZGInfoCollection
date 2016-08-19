@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 #import "ZGInfoCollection.h"
-@interface ViewController ()
+@interface ViewController ()<CLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *infoTextLabel;
+
 
 @end
 
@@ -16,7 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-    NSLog(@"%d\n",[ZGJailBreak isJailBreak]);
+    self.infoTextLabel.numberOfLines = 0;
+    ZGLocationInfo *info = [ZGLocationInfo currentLocation];
+        [info getCurrentLocation:^(CLPlacemark *location, NSString *desc) {
+            if (location) {
+                self.infoTextLabel.text = [NSString stringWithFormat:@"%@\n%@",location.name,location.thoroughfare];
+                self.title = desc;
+            }else {
+                self.infoTextLabel.text = desc;
+            }
+        }];
 }
 @end
