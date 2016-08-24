@@ -215,15 +215,30 @@
 	 */
 	- (CGFloat)getScreenDpi;
 
-5、ZGNetWorkInfo    
+<b>5、ZGNetWorkInfo    </b>
 
-	
 	/**
 	 *  得到当前wifi列表
 	 *
 	 *  @return wifi列表,经测试，这里只是返回了当前连接wifi的信息
 	 */
 	- (NSMutableArray *)getWifiListArr;
+
+
+	/**
+	 *  当前设备是否联网
+	 *
+	 *  @return YES表示联网，NO表示没有联网
+	 */
+	- (BOOL)isConnectionNetWork;
+
+
+	/**
+	 *  得到当前网络状态
+	 *
+	 *  @return 返回 NetWorkStaus枚举
+	 */
+	- (NetWorkReachStatus)getNetWorkStaus;
 	
 6、ZGJailBreak    
 	
@@ -235,7 +250,7 @@
 	+ (BOOL)isJailBreak;
 
 
-<b>7、ZGLocationInfo</b>
+7、ZGLocationInfo
 
 
 	/**
@@ -246,9 +261,37 @@
 	 */
 	- (void)getCurrentLocation:(ChangeLocationBlock)block;
 
+<b>8、ZGProjectInfo  </b>
+
+
+	/**
+	 *  得到当前项目版本
+	 *
+	 *  @return 当前版本
+	 */
+	- (NSString *)getProjectVersion;
+
+	/**
+	 *  得到当前项目构建版本号
+	 *
+	 *  @return 当前构建版本
+	 */
+	- (NSString *)getProjectBuildVersion;
+
+
+
+	/**
+	 *  得到当前项目名称
+	 *
+	 *  @return 当前名称
+	 */
+	- (NSString *)getProjectName;
+
 ####更新记录
-2016年8月19更新    
-添加位置信息定位。详见7
+1.2016年8月19更新    
+添加位置信息定位。详见7    
+2.2016年8月24日更新   
+添加网络和项目信息，详见5,8
 
 ####附
 有问题请联系：scottzg@126.com
