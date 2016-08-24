@@ -8,6 +8,12 @@
 
 #import "ZGNetWorkInfo.h"
 #import <SystemConfiguration/CaptiveNetwork.h>
+
+
+@interface ZGNetWorkInfo ()
+
+@property (nonatomic,strong)Reachability *reachAb;
+@end
 @implementation ZGNetWorkInfo
 
 
@@ -36,5 +42,46 @@
     }];
     CFRelease(wifiInterfaces);
     return wifiListArr;
+}
+- (BOOL)isConnectionNetWork {
+    BOOL isConnect = NO;
+    switch ([self.reachAb currentReachabilityStatus]) {
+        case NotReachable:
+            isConnect = NO;
+            break;
+        case ReachableViaWiFi:   //使用的wifi
+            isConnect = YES;
+            break;
+        case ReachableViaWWAN:  //使用的移动网络
+            isConnect = YES;
+            break;
+        default:
+
+            break;
+    }
+    return isConnect;
+}
+- (NetWorkReachStatus)getNetWorkStaus {
+    switch ([self.reachAb currentReachabilityStatus]) {
+        case NotReachable:
+            return NetWorkReachStatusNoConnect;
+            break;
+        case ReachableViaWiFi:   //使用的wifi
+            return NetWorkReachStatusWifi;
+            break;
+        case ReachableViaWWAN:  //使用的移动网络
+            return NetWorkReachStatusViaWWan;
+            break;
+        default:
+            return NetWorkReachStatusUnDefine;
+            break;
+    }
+}
+#pragma mark - Lazy load
+- (Reachability *)reachAb {
+    if (!_reachAb) {
+        _reachAb = [Reachability reachabilityWithHostName:@"http://www.baidu.com"];
+    }
+    return _reachAb;
 }
 @end

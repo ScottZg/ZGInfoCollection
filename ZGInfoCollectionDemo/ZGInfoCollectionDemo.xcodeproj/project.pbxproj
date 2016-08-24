@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560961BC1D6B014200444378 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 560961BB1D6B014200444378 /* Reachability.m */; };
+		560961BF1D6B0A1600444378 /* ZGProjectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 560961BE1D6B0A1600444378 /* ZGProjectInfo.m */; };
 		56774D321D65491D00A48C4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D311D65491D00A48C4F /* main.m */; };
 		56774D351D65491D00A48C4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D341D65491D00A48C4F /* AppDelegate.m */; };
 		56774D381D65491D00A48C4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D371D65491D00A48C4F /* ViewController.m */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		560961BA1D6B014200444378 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		560961BB1D6B014200444378 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		560961BD1D6B0A1600444378 /* ZGProjectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGProjectInfo.h; sourceTree = "<group>"; };
+		560961BE1D6B0A1600444378 /* ZGProjectInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGProjectInfo.m; sourceTree = "<group>"; };
 		56774D2D1D65491D00A48C4F /* ZGInfoCollectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGInfoCollectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56774D311D65491D00A48C4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56774D331D65491D00A48C4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -181,6 +187,10 @@
 				56EADCEB1D65A68900251415 /* ZGJailBreak.m */,
 				56EADCED1D65C26E00251415 /* ZGLocationInfo.h */,
 				56EADCEE1D65C26E00251415 /* ZGLocationInfo.m */,
+				560961BA1D6B014200444378 /* Reachability.h */,
+				560961BB1D6B014200444378 /* Reachability.m */,
+				560961BD1D6B0A1600444378 /* ZGProjectInfo.h */,
+				560961BE1D6B0A1600444378 /* ZGProjectInfo.m */,
 			);
 			path = ZGInfoCollection;
 			sourceTree = "<group>";
@@ -319,12 +329,14 @@
 				56EADCEC1D65A68900251415 /* ZGJailBreak.m in Sources */,
 				56774D381D65491D00A48C4F /* ViewController.m in Sources */,
 				56EADCE91D65923400251415 /* ZGNetWorkInfo.m in Sources */,
+				560961BC1D6B014200444378 /* Reachability.m in Sources */,
 				56EADCEF1D65C26E00251415 /* ZGLocationInfo.m in Sources */,
 				56EADCE61D65877000251415 /* ZGScreenInfo.m in Sources */,
 				56774D351D65491D00A48C4F /* AppDelegate.m in Sources */,
 				56774D691D654AB200A48C4F /* ZGDeviceInfo.m in Sources */,
 				56774D321D65491D00A48C4F /* main.m in Sources */,
 				56EADCE31D657DE800251415 /* ZGBatteryInfo.m in Sources */,
+				560961BF1D6B0A1600444378 /* ZGProjectInfo.m in Sources */,
 				56EADCE01D655B6F00251415 /* ZGStorageInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

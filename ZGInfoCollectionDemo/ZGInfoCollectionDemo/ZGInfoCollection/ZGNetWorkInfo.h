@@ -6,6 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Reachability.h"
+
+typedef NS_ENUM(NSInteger,NetWorkReachStatus)  {
+    NetWorkReachStatusUnDefine,    //未定义
+    NetWorkReachStatusNoConnect,   //未连接
+    NetWorkReachStatusWifi,   //链接的wifi
+    NetWorkReachStatusViaWWan   //链接的移动网络
+};
+
 
 @interface ZGNetWorkInfo : NSObject
 
@@ -22,4 +31,20 @@
  *  @return wifi列表,经测试，这里只是返回了当前连接wifi的信息
  */
 - (NSMutableArray *)getWifiListArr;
+
+
+/**
+ *  当前设备是否联网
+ *
+ *  @return YES表示联网，NO表示没有联网
+ */
+- (BOOL)isConnectionNetWork;
+
+
+/**
+ *  得到当前网络状态
+ *
+ *  @return 返回 NetWorkStaus枚举
+ */
+- (NetWorkReachStatus)getNetWorkStaus;
 @end

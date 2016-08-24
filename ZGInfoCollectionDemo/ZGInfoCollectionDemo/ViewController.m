@@ -20,14 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.infoTextLabel.numberOfLines = 0;
-    ZGLocationInfo *info = [ZGLocationInfo currentLocation];
-        [info getCurrentLocation:^(CLPlacemark *location, NSString *desc) {
-            if (location) {
-                self.infoTextLabel.text = [NSString stringWithFormat:@"%@\n%@",location.name,location.thoroughfare];
-                self.title = desc;
-            }else {
-                self.infoTextLabel.text = desc;
-            }
-        }];
+//    ZGNetWorkInfo *netInfo = [ZGNetWorkInfo netWorkInfo];
+    
+
+    ZGProjectInfo *f = [ZGProjectInfo currentProject];
+    NSLog(@"%@",[f getProjectName]);
+//    ZGLocationInfo *info = [ZGLocationInfo currentLocation];
+//        [info getCurrentLocation:^(CLPlacemark *location, NSString *desc) {
+//            if (location) {
+//                self.infoTextLabel.text = [NSString stringWithFormat:@"%@\n%@",location.name,location.thoroughfare];
+//                self.title = desc;
+//            }else {
+//                self.infoTextLabel.text = desc;
+//            }
+//        }];
 }
 @end
