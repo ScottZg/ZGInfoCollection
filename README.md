@@ -2,7 +2,7 @@
 获取iPhone相关信息、电池信息、屏幕信息、越狱状态以及网络状态等。
 
 #### 使用方法
-方式1、下载工程，然后将ZGInfoCollection文件夹放到自己的额项目中去。    
+方式1、下载工程，然后将ZGInfoCollection文件夹放到自己的项目中去。    
 
 方式2、Install with CocoaPods by adding the following to your Podfile:
       
