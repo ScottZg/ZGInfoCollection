@@ -6,7 +6,7 @@
 
 方式2、Install with CocoaPods by adding the following to your Podfile:
       
-      pod 'Toast', '~> 3.0'
+      pod 'ZGInfoCollection', '~> 1.0.0'
 
 #### 详细介绍
 使用时导入ZGInfoCollection即可，里面包含了所有相关文件。下面简单介绍一下：    
