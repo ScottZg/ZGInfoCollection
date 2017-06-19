@@ -293,21 +293,21 @@
 
 <b>9、ZGDeviceVPNInfo  </b>
 
-/**
- get current link vpn status
+	/**
+ 	get current link vpn status
 
- @return devicelinkvpnstatus
- */
-+ (DeviceLinkVPNStatus)getCurrentDeviceLinkVpnSataus;
+	 @return devicelinkvpnstatus
+	 */
+	+ (DeviceLinkVPNStatus)getCurrentDeviceLinkVpnSataus;
 
 
 
-/**
- judge device connected vpn or not
+	/**
+ 	judge device connected vpn or not
 
- @return YES:Connected,NO:not connected
- */
-+ (BOOL)isVPNConnected;
+	 @return YES:Connected,NO:not connected
+ 	*/
+	+ (BOOL)isVPNConnected;
 
 #### 更新记录
 1.2016年8月19更新    
