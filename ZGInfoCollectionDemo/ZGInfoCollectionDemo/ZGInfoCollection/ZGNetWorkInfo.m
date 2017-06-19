@@ -77,6 +77,30 @@
             break;
     }
 }
++ (BOOL)ifConnectDelegate {
+    CFDictionaryRef proxySettings = CFNetworkCopySystemProxySettings();
+    NSDictionary *dictProxy = (__bridge_transfer id)proxySettings;
+    NSLog(@"%@",dictProxy);
+    
+    //是否开启了http代理
+    if ([[dictProxy objectForKey:@"HTTPEnable"] boolValue]) {
+        return YES;
+    }
+    return  NO;
+    
+}
++ (NSDictionary *)getCurrentDelegateSettings {
+    CFDictionaryRef proxySettings = CFNetworkCopySystemProxySettings();
+    NSDictionary *dictProxy = (__bridge_transfer id)proxySettings;
+    
+    //是否开启了http代理
+    if ([[dictProxy objectForKey:@"HTTPEnable"] boolValue]) {
+        CFBridgingRelease(proxySettings);
+        return dictProxy;
+        
+    }
+    return nil;
+}
 #pragma mark - Lazy load
 - (Reachability *)reachAb {
     if (!_reachAb) {

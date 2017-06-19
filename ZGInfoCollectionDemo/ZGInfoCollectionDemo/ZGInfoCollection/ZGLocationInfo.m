@@ -65,6 +65,26 @@
     [geoCoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
         if (placemarks.count>0) {
             CLPlacemark *placeMark = placemarks[0];
+            NSDictionary *dic = placeMark.addressDictionary;
+            NSString *formattedAddressStr = [dic[@"FormattedAddressLines"] objectAtIndex:0];
+            NSString *countryStr = dic[@"Country"];
+            NSString *cityStr = dic[@"City"];
+            NSString *subLocalityStr = dic[@"SubLocality"];
+            NSString *provinceStr = dic[@"State"];
+            
+            if (formattedAddressStr.length > countryStr.length && [[formattedAddressStr substringToIndex:countryStr.length] isEqualToString:countryStr]) {
+                formattedAddressStr = [formattedAddressStr substringFromIndex:countryStr.length];
+            }
+            if (formattedAddressStr.length > provinceStr.length && [[formattedAddressStr substringToIndex:provinceStr.length] isEqualToString:provinceStr]) {
+                formattedAddressStr = [formattedAddressStr substringFromIndex:provinceStr.length];
+            }
+            if (formattedAddressStr.length > cityStr.length && [[formattedAddressStr substringToIndex:cityStr.length] isEqualToString:cityStr]) {
+                formattedAddressStr = [formattedAddressStr substringFromIndex:cityStr.length];
+            }
+            if (formattedAddressStr.length > subLocalityStr.length && [[formattedAddressStr substringToIndex:subLocalityStr.length] isEqualToString:subLocalityStr]) {
+                formattedAddressStr = [formattedAddressStr substringFromIndex:subLocalityStr.length];
+            }
+            NSString *resultStr = [NSString stringWithFormat:@"%@\3%@\3%@\3%@\3%@\3%@\3%@\2",countryStr,provinceStr,cityStr,@"",subLocalityStr,@"",formattedAddressStr];
             if (self.blockLocation) {
                 self.blockLocation(placeMark,@"定位成功");
             }
@@ -77,24 +97,5 @@
         self.blockLocation(nil,@"方向改变");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @end

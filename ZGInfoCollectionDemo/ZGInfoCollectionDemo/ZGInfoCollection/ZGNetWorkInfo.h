@@ -47,4 +47,20 @@ typedef NS_ENUM(NSInteger,NetWorkReachStatus)  {
  *  @return 返回 NetWorkStaus枚举
  */
 - (NetWorkReachStatus)getNetWorkStaus;
+
+
+/**
+ 是否连接了代理
+
+ @return YES表示连接了代理，NO表示没有连接代理。
+ */
++ (BOOL)ifConnectDelegate;
+
+
+/**
+ 得到当前代理的配置
+
+ @return dic,如果没有连接代理，怎返回nil
+ */
++ (NSDictionary *)getCurrentDelegateSettings;
 @end

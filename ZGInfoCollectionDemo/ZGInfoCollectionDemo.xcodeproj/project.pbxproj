@@ -18,6 +18,8 @@
 		56774D4B1D65491D00A48C4F /* ZGInfoCollectionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D4A1D65491D00A48C4F /* ZGInfoCollectionDemoTests.m */; };
 		56774D561D65491D00A48C4F /* ZGInfoCollectionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D551D65491D00A48C4F /* ZGInfoCollectionDemoUITests.m */; };
 		56774D691D654AB200A48C4F /* ZGDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D681D654AB200A48C4F /* ZGDeviceInfo.m */; };
+		569ECFBB1EF7C99F00B0F648 /* ZGDeviceVPNInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 569ECFBA1EF7C99F00B0F648 /* ZGDeviceVPNInfo.m */; };
+		569ECFBE1EF7D51A00B0F648 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569ECFBD1EF7D51A00B0F648 /* NetworkExtension.framework */; };
 		56EADCE01D655B6F00251415 /* ZGStorageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCDF1D655B6F00251415 /* ZGStorageInfo.m */; };
 		56EADCE31D657DE800251415 /* ZGBatteryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCE21D657DE800251415 /* ZGBatteryInfo.m */; };
 		56EADCE61D65877000251415 /* ZGScreenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCE51D65877000251415 /* ZGScreenInfo.m */; };
@@ -66,6 +68,10 @@
 		56774D571D65491D00A48C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56774D671D654AB200A48C4F /* ZGDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGDeviceInfo.h; sourceTree = "<group>"; };
 		56774D681D654AB200A48C4F /* ZGDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGDeviceInfo.m; sourceTree = "<group>"; };
+		569ECFB91EF7C99F00B0F648 /* ZGDeviceVPNInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGDeviceVPNInfo.h; sourceTree = "<group>"; };
+		569ECFBA1EF7C99F00B0F648 /* ZGDeviceVPNInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGDeviceVPNInfo.m; sourceTree = "<group>"; };
+		569ECFBD1EF7D51A00B0F648 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		569ECFBF1EF7D51A00B0F648 /* ZGInfoCollectionDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZGInfoCollectionDemo.entitlements; sourceTree = "<group>"; };
 		56EADCDD1D65572200251415 /* ZGInfoCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGInfoCollection.h; sourceTree = "<group>"; };
 		56EADCDE1D655B6F00251415 /* ZGStorageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGStorageInfo.h; sourceTree = "<group>"; };
 		56EADCDF1D655B6F00251415 /* ZGStorageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGStorageInfo.m; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569ECFBE1EF7D51A00B0F648 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +120,7 @@
 				56774D491D65491D00A48C4F /* ZGInfoCollectionDemoTests */,
 				56774D541D65491D00A48C4F /* ZGInfoCollectionDemoUITests */,
 				56774D2E1D65491D00A48C4F /* Products */,
+				569ECFBC1EF7D51A00B0F648 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +137,7 @@
 		56774D2F1D65491D00A48C4F /* ZGInfoCollectionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				569ECFBF1EF7D51A00B0F648 /* ZGInfoCollectionDemo.entitlements */,
 				56774D631D65495300A48C4F /* ZGInfoCollection */,
 				56774D331D65491D00A48C4F /* AppDelegate.h */,
 				56774D341D65491D00A48C4F /* AppDelegate.m */,
@@ -191,8 +200,18 @@
 				560961BB1D6B014200444378 /* Reachability.m */,
 				560961BD1D6B0A1600444378 /* ZGProjectInfo.h */,
 				560961BE1D6B0A1600444378 /* ZGProjectInfo.m */,
+				569ECFB91EF7C99F00B0F648 /* ZGDeviceVPNInfo.h */,
+				569ECFBA1EF7C99F00B0F648 /* ZGDeviceVPNInfo.m */,
 			);
 			path = ZGInfoCollection;
+			sourceTree = "<group>";
+		};
+		569ECFBC1EF7D51A00B0F648 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				569ECFBD1EF7D51A00B0F648 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,12 +276,17 @@
 		56774D251D65491D00A48C4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = zhanggui;
 				TargetAttributes = {
 					56774D2C1D65491D00A48C4F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 64PCQK6645;
+						DevelopmentTeam = 4ATZY28W58;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+						};
 					};
 					56774D451D65491D00A48C4F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -329,6 +353,7 @@
 				56EADCEC1D65A68900251415 /* ZGJailBreak.m in Sources */,
 				56774D381D65491D00A48C4F /* ViewController.m in Sources */,
 				56EADCE91D65923400251415 /* ZGNetWorkInfo.m in Sources */,
+				569ECFBB1EF7C99F00B0F648 /* ZGDeviceVPNInfo.m in Sources */,
 				560961BC1D6B014200444378 /* Reachability.m in Sources */,
 				56EADCEF1D65C26E00251415 /* ZGLocationInfo.m in Sources */,
 				56EADCE61D65877000251415 /* ZGScreenInfo.m in Sources */,
@@ -406,8 +431,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -451,8 +478,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -480,12 +509,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZGInfoCollectionDemo/ZGInfoCollectionDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4ATZY28W58;
 				INFOPLIST_FILE = ZGInfoCollectionDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuquwangluo.location;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuchuang.credithome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -495,12 +526,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZGInfoCollectionDemo/ZGInfoCollectionDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4ATZY28W58;
 				INFOPLIST_FILE = ZGInfoCollectionDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuquwangluo.location;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuchuang.credithome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
