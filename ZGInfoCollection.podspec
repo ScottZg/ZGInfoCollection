@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "ZGInfoCollection"
-  s.version      = "1.0.0"
-  s.summary      = "A library for collection device info."
+  s.version      = "1.0.1"
+  s.summary      = "A library for collection device info.add net delegate info and vpn info"
   s.homepage     = "https://github.com/ScottZg/ZGInfoCollection"
   s.license      = "MIT"
   s.author             = { "ScottZg" => "scottzg@126.com" }

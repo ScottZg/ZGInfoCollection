@@ -15,4 +15,7 @@
 #import "ZGScreenInfo.h"
 #import "ZGNetWorkInfo.h"
 #import "ZGJailBreak.h"
+#import "ZGLocationInfo.h"
+#import "ZGProjectInfo.h"
+#import "ZGDeviceVPNInfo.h"
 #endif /* ZGInfoCollection_h */
