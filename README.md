@@ -291,6 +291,24 @@
 	 */
 	- (NSString *)getProjectName;
 
+<b>9、ZGDeviceVPNInfo  </b>
+
+/**
+ get current link vpn status
+
+ @return devicelinkvpnstatus
+ */
++ (DeviceLinkVPNStatus)getCurrentDeviceLinkVpnSataus;
+
+
+
+/**
+ judge device connected vpn or not
+
+ @return YES:Connected,NO:not connected
+ */
++ (BOOL)isVPNConnected;
+
 #### 更新记录
 1.2016年8月19更新    
 添加位置信息定位。详见7    
@@ -298,6 +316,7 @@
 添加网络和项目信息，详见5,8    
 3.2016年10月27日更新   
 添加Cocoapods支持
-
+4.2017年6月19日更新
+去掉Cocoapods支持。添加网络代理查询以及VPN信息
 #### 附
 有问题请联系：scottzg@126.com
