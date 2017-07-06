@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "ZGInfoCollection.h"
-
+#import "ZGPhoneOperatorInfo.h"
 @interface ViewController ()<CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *infoTextLabel;
@@ -20,6 +20,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    NSLog(@"%@",[ZGPhoneOperatorInfo getCurrentPhoneOperatorName]);
     NSDictionary *status = [ZGNetWorkInfo getCurrentDelegateSettings];
     NSLog(@"%@",status);
     ZGLocationInfo *info = [ZGLocationInfo currentLocation];

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		560961BC1D6B014200444378 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 560961BB1D6B014200444378 /* Reachability.m */; };
 		560961BF1D6B0A1600444378 /* ZGProjectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 560961BE1D6B0A1600444378 /* ZGProjectInfo.m */; };
+		563D11A61F0DE1ED00CEDFC3 /* ZGPhoneOperatorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 563D11A51F0DE1ED00CEDFC3 /* ZGPhoneOperatorInfo.m */; };
 		56774D321D65491D00A48C4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D311D65491D00A48C4F /* main.m */; };
 		56774D351D65491D00A48C4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D341D65491D00A48C4F /* AppDelegate.m */; };
 		56774D381D65491D00A48C4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D371D65491D00A48C4F /* ViewController.m */; };
@@ -50,6 +51,8 @@
 		560961BB1D6B014200444378 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		560961BD1D6B0A1600444378 /* ZGProjectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGProjectInfo.h; sourceTree = "<group>"; };
 		560961BE1D6B0A1600444378 /* ZGProjectInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGProjectInfo.m; sourceTree = "<group>"; };
+		563D11A41F0DE1ED00CEDFC3 /* ZGPhoneOperatorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGPhoneOperatorInfo.h; sourceTree = "<group>"; };
+		563D11A51F0DE1ED00CEDFC3 /* ZGPhoneOperatorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGPhoneOperatorInfo.m; sourceTree = "<group>"; };
 		56774D2D1D65491D00A48C4F /* ZGInfoCollectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGInfoCollectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56774D311D65491D00A48C4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56774D331D65491D00A48C4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 				560961BE1D6B0A1600444378 /* ZGProjectInfo.m */,
 				569ECFB91EF7C99F00B0F648 /* ZGDeviceVPNInfo.h */,
 				569ECFBA1EF7C99F00B0F648 /* ZGDeviceVPNInfo.m */,
+				563D11A41F0DE1ED00CEDFC3 /* ZGPhoneOperatorInfo.h */,
+				563D11A51F0DE1ED00CEDFC3 /* ZGPhoneOperatorInfo.m */,
 			);
 			path = ZGInfoCollection;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 				560961BC1D6B014200444378 /* Reachability.m in Sources */,
 				56EADCEF1D65C26E00251415 /* ZGLocationInfo.m in Sources */,
 				56EADCE61D65877000251415 /* ZGScreenInfo.m in Sources */,
+				563D11A61F0DE1ED00CEDFC3 /* ZGPhoneOperatorInfo.m in Sources */,
 				56774D351D65491D00A48C4F /* AppDelegate.m in Sources */,
 				56774D691D654AB200A48C4F /* ZGDeviceInfo.m in Sources */,
 				56774D321D65491D00A48C4F /* main.m in Sources */,

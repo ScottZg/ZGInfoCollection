@@ -1,7 +1,7 @@
 //
 //  ZGProjectInfo.h
 //  ZGInfoCollectionDemo
-//
+//查看当前项目信息
 //  Created by zhanggui on 16/8/22.
 //  Copyright © 2016年 zhanggui. All rights reserved.
 //
