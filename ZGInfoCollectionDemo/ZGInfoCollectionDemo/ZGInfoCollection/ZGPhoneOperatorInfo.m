@@ -31,5 +31,14 @@
     return [carrier isoCountryCode];
 
 }
-+ get
++ (NSString *)getMobileCountryCode {
+    CTTelephonyNetworkInfo *info = [CTTelephonyNetworkInfo new];
+    CTCarrier *carrier = [info subscriberCellularProvider];
+    
+    if (!carrier.isoCountryCode) {
+        return nil;
+    }
+    return [carrier mobileCountryCode];
+
+}
 @end
