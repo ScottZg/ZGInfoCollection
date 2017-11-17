@@ -100,7 +100,12 @@ static NSString * const kVersion = @"version";
     if ([platform isEqualToString:@"iPhone7,1"]) return @"iPhone 6 Plus";
     if ([platform isEqualToString:@"iPhone7,2"]) return @"iPhone 6";
     if ([platform isEqualToString:@"iPhone8,1"]) return @"iPhone 6s";
-    if ([platform isEqualToString:@"iPhone8,2"]) return @"iPhone 6s Plus";
+    if ([platform isEqualToString:@"iPhone8,4"]) return @"iPhone SE";
+    if ([platform isEqualToString:@"iPhone9,1"]) return @"iPhone 7";
+    if ([platform isEqualToString:@"iPhone9,2"]) return @"iPhone 7 Plus";
+    if ([platform isEqualToString:@"iPhone10,1"]) return @"iPhone 8";
+    if ([platform isEqualToString:@"iPhone10,2"]) return @"iPhone 8 Plus";
+    if ([platform isEqualToString:@"iPhone10,3"]) return @"iPhone X";
     if ([platform isEqualToString:@"iPod1,1"]) return @"iPod Touch 1G";
     if ([platform isEqualToString:@"iPod2,1"]) return @"iPod Touch 2G";
     if ([platform isEqualToString:@"iPod3,1"]) return @"iPod Touch 3G";
@@ -128,7 +133,6 @@ static NSString * const kVersion = @"version";
     if ([platform isEqualToString:@"iPad4,6"]) return @"iPad Mini 2G";
     if ([platform isEqualToString:@"i386"]) return @"iPhone Simulator";
     if ([platform isEqualToString:@"x86_64"]) return @"iPhone Simulator";
-   
     return platform;
     
 }
