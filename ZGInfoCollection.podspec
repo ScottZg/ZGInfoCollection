@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ZGInfoCollection"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "A library for collection device info.add deviece info for iPhone 8/8p/X"
   s.homepage     = "https://github.com/ScottZg/ZGInfoCollection"
   s.license      = "MIT"
@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = "7.0"
   s.source_files  = "ZGInfoCollection/*.{h,m}"
-
+s
 end
