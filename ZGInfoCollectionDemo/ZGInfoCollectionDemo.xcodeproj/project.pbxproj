@@ -20,7 +20,6 @@
 		56774D561D65491D00A48C4F /* ZGInfoCollectionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D551D65491D00A48C4F /* ZGInfoCollectionDemoUITests.m */; };
 		56774D691D654AB200A48C4F /* ZGDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56774D681D654AB200A48C4F /* ZGDeviceInfo.m */; };
 		569ECFBB1EF7C99F00B0F648 /* ZGDeviceVPNInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 569ECFBA1EF7C99F00B0F648 /* ZGDeviceVPNInfo.m */; };
-		569ECFBE1EF7D51A00B0F648 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569ECFBD1EF7D51A00B0F648 /* NetworkExtension.framework */; };
 		56EADCE01D655B6F00251415 /* ZGStorageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCDF1D655B6F00251415 /* ZGStorageInfo.m */; };
 		56EADCE31D657DE800251415 /* ZGBatteryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCE21D657DE800251415 /* ZGBatteryInfo.m */; };
 		56EADCE61D65877000251415 /* ZGScreenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCE51D65877000251415 /* ZGScreenInfo.m */; };
@@ -99,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				569ECFBE1EF7D51A00B0F648 /* NetworkExtension.framework in Frameworks */,
 				A03A08DA3DA3F138B40F062D /* Pods_ZGInfoCollectionDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,12 +297,12 @@
 		56774D251D65491D00A48C4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = zhanggui;
 				TargetAttributes = {
 					56774D2C1D65491D00A48C4F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 4ATZY28W58;
+						DevelopmentTeam = XJW8592FVQ;
 						SystemCapabilities = {
 							com.apple.NetworkExtensions = {
 								enabled = 1;
@@ -489,14 +487,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -536,14 +542,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -576,11 +590,11 @@
 				CODE_SIGN_ENTITLEMENTS = ZGInfoCollectionDemo/ZGInfoCollectionDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4ATZY28W58;
+				DEVELOPMENT_TEAM = XJW8592FVQ;
 				INFOPLIST_FILE = ZGInfoCollectionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuchuang.credithome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhanggui.zginfocollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -594,11 +608,11 @@
 				CODE_SIGN_ENTITLEMENTS = ZGInfoCollectionDemo/ZGInfoCollectionDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4ATZY28W58;
+				DEVELOPMENT_TEAM = XJW8592FVQ;
 				INFOPLIST_FILE = ZGInfoCollectionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuchuang.credithome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhanggui.zginfocollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

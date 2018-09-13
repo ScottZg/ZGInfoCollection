@@ -37,9 +37,6 @@
     [interfaces enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CFDictionaryRef dictRef = CNCopyCurrentNetworkInfo((__bridge CFStringRef)obj);
         NSDictionary *netWorkInfo = (__bridge NSDictionary *)dictRef;
-        NSData *data = netWorkInfo[@"SSIDDATA"];
-        NSError *error = nil;
-        NSString *dic = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         [wifiListArr addObject:netWorkInfo];
         CFRelease(dictRef);
     }];
