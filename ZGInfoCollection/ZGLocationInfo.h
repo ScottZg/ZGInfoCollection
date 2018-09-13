@@ -27,7 +27,6 @@ typedef void(^ChangeLocationBlock) (CLPlacemark *location,NSString *desc);
  *  得到设备当前的位置,block回调里面已经包含了CLPlacemark里面包含了你需要的信息，需要自取
  *  详细可以参考CLPlacemark类属性
  *
- *  @return CLLocation
  */
 - (void)getCurrentLocation:(ChangeLocationBlock)block;
 @end

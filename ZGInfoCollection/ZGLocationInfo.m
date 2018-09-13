@@ -84,7 +84,6 @@
             if (formattedAddressStr.length > subLocalityStr.length && [[formattedAddressStr substringToIndex:subLocalityStr.length] isEqualToString:subLocalityStr]) {
                 formattedAddressStr = [formattedAddressStr substringFromIndex:subLocalityStr.length];
             }
-            NSString *resultStr = [NSString stringWithFormat:@"%@\3%@\3%@\3%@\3%@\3%@\3%@\2",countryStr,provinceStr,cityStr,@"",subLocalityStr,@"",formattedAddressStr];
             if (self.blockLocation) {
                 self.blockLocation(placeMark,@"定位成功");
             }

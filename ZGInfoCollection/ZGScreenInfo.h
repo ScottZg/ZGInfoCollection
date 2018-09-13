@@ -38,7 +38,7 @@
 /**
  *  屏幕分辨率
  *
- *  @return 
+ *  @return  屏幕分辨率
  */
 - (NSString *)screenResolution;
 /**
