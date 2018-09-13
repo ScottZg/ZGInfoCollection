@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ScottZg/ZGInfoCollection.git", :tag => "#{s.version}" }
   s.requires_arc = true
   s.platform    = :ios, "7.0"
-  s.ios.deployment_target = "7.0"
+  s.ios.deployment_target = "8.0"
+  s.requires_arc = true
   s.source_files  = "ZGInfoCollection/*.{h,m}"
 end
