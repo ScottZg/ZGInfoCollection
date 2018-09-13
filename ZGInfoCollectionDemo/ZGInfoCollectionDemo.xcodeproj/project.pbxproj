@@ -27,6 +27,7 @@
 		56EADCE91D65923400251415 /* ZGNetWorkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCE81D65923400251415 /* ZGNetWorkInfo.m */; };
 		56EADCEC1D65A68900251415 /* ZGJailBreak.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCEB1D65A68900251415 /* ZGJailBreak.m */; };
 		56EADCEF1D65C26E00251415 /* ZGLocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EADCEE1D65C26E00251415 /* ZGLocationInfo.m */; };
+		A03A08DA3DA3F138B40F062D /* Pods_ZGInfoCollectionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBB1BD7B73D466B9D154C2F /* Pods_ZGInfoCollectionDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,9 @@
 		56EADCEB1D65A68900251415 /* ZGJailBreak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGJailBreak.m; sourceTree = "<group>"; };
 		56EADCED1D65C26E00251415 /* ZGLocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLocationInfo.h; sourceTree = "<group>"; };
 		56EADCEE1D65C26E00251415 /* ZGLocationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLocationInfo.m; sourceTree = "<group>"; };
+		80EA82C532596F58BDFD9D01 /* Pods-ZGInfoCollectionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGInfoCollectionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGInfoCollectionDemo/Pods-ZGInfoCollectionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9A59DDE91E82DDAE0A9F23B2 /* Pods-ZGInfoCollectionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGInfoCollectionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGInfoCollectionDemo/Pods-ZGInfoCollectionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		ECBB1BD7B73D466B9D154C2F /* Pods_ZGInfoCollectionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZGInfoCollectionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				569ECFBE1EF7D51A00B0F648 /* NetworkExtension.framework in Frameworks */,
+				A03A08DA3DA3F138B40F062D /* Pods_ZGInfoCollectionDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +129,7 @@
 				56774D541D65491D00A48C4F /* ZGInfoCollectionDemoUITests */,
 				56774D2E1D65491D00A48C4F /* Products */,
 				569ECFBC1EF7D51A00B0F648 /* Frameworks */,
+				DEB141F934749B403229BEF4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,8 +221,18 @@
 			isa = PBXGroup;
 			children = (
 				569ECFBD1EF7D51A00B0F648 /* NetworkExtension.framework */,
+				ECBB1BD7B73D466B9D154C2F /* Pods_ZGInfoCollectionDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEB141F934749B403229BEF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A59DDE91E82DDAE0A9F23B2 /* Pods-ZGInfoCollectionDemo.debug.xcconfig */,
+				80EA82C532596F58BDFD9D01 /* Pods-ZGInfoCollectionDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56774D5A1D65491D00A48C4F /* Build configuration list for PBXNativeTarget "ZGInfoCollectionDemo" */;
 			buildPhases = (
+				6B36520DB125CB6D153C4176 /* [CP] Check Pods Manifest.lock */,
 				56774D291D65491D00A48C4F /* Sources */,
 				56774D2A1D65491D00A48C4F /* Frameworks */,
 				56774D2B1D65491D00A48C4F /* Resources */,
+				D2AEF6886AF6163DA1F1D06B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,6 +367,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B36520DB125CB6D153C4176 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGInfoCollectionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2AEF6886AF6163DA1F1D06B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZGInfoCollectionDemo/Pods-ZGInfoCollectionDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZGInfoCollection/ZGInfoCollection.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZGInfoCollection.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGInfoCollectionDemo/Pods-ZGInfoCollectionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56774D291D65491D00A48C4F /* Sources */ = {
@@ -513,6 +570,7 @@
 		};
 		56774D5B1D65491D00A48C4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A59DDE91E82DDAE0A9F23B2 /* Pods-ZGInfoCollectionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ZGInfoCollectionDemo/ZGInfoCollectionDemo.entitlements;
@@ -530,6 +588,7 @@
 		};
 		56774D5C1D65491D00A48C4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80EA82C532596F58BDFD9D01 /* Pods-ZGInfoCollectionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ZGInfoCollectionDemo/ZGInfoCollectionDemo.entitlements;

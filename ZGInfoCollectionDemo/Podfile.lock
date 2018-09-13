@@ -1,0 +1,16 @@
+PODS:
+  - ZGInfoCollection (1.1.1)
+
+DEPENDENCIES:
+  - ZGInfoCollection (from `..`)
+
+EXTERNAL SOURCES:
+  ZGInfoCollection:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  ZGInfoCollection: 716b571bf09a53c0f75101acdaa98fe5a58906e9
+
+PODFILE CHECKSUM: f0b17af9dcc127c145e4deaf45f0012bdf059d91
+
+COCOAPODS: 1.5.3
